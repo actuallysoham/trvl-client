@@ -1,0 +1,10 @@
+.text-over-image {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.text-over-image img {
+  width: 30px;
+  height: 30px;
+}

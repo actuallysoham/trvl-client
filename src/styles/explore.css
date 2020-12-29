@@ -1,0 +1,203 @@
+/* CSS FOR EXPLORE PAGE ONLY */
+
+.header {
+  background-image: url(https://res.cloudinary.com/ashokacs/image/upload/v1605586021/navbar_umxnk6.png);
+  height: 20rem;
+  background-size: relative;
+}
+
+/* Search Bar Styling */
+.search {
+  margin: 0 auto !important;
+  max-width: 850px !important;
+  margin-top: -30px !important;
+  font-size: small;
+}
+
+.search1 {
+  border: 1px solid #dddddd !important;
+  border-radius: 32px !important;
+  color: #222222 !important;
+  display: flex !important;
+  height: 66px !important;
+  position: relative !important;
+  width: 100% !important;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15), 0px 3px 8px rgba(0, 0, 0, 0.1) !important;
+  --big-search-form-background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+input,
+select {
+  border: none;
+}
+
+.destination {
+  display: flex !important;
+  flex: 1 0 0% !important;
+  min-width: 0px !important;
+  position: relative !important;
+  align-items: center !important;
+}
+
+.search-input {
+  cursor: pointer !important;
+  display: block !important;
+  background-clip: padding-box !important;
+  border: 1px solid transparent !important;
+  border-radius: 32px !important;
+  flex: 1 0 0% !important;
+  min-width: 0px !important;
+  padding: 14px 32px !important;
+  align-items: center !important;
+}
+
+.dates {
+  display: flex !important;
+  flex: 2.25 0 0% !important;
+  min-width: 0px !important;
+  position: relative !important;
+  align-items: center !important;
+}
+
+.guests {
+  align-items: center !important;
+  display: flex !important;
+  min-width: 0px !important;
+  position: relative !important;
+  flex: 0.8 0 auto !important;
+}
+
+.button-container {
+  align-items: center !important;
+  text-align: right !important;
+  display: flex !important;
+  width: 10px !important;
+  position: relative !important;
+  flex: 0.2 0 auto !important;
+}
+
+.guest-num {
+  appearance: none !important;
+  background: transparent !important;
+  border: 0px !important;
+  cursor: pointer !important;
+  display: block !important;
+  margin: 0px !important;
+  outline: none !important;
+  padding: 1px !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  flex: 1 0 0% !important;
+  width: 0px !important;
+  z-index: 3 !important;
+}
+
+.search-button {
+  text-align: center !important;
+  align-items: center !important;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 25%;
+  margin-left: -10%;
+  background-color: #003060;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15),
+    0px 3px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.separator {
+  align-self: center !important;
+  border-right: 1px solid #dddddd !important;
+  flex: 0 0 0px !important;
+  height: 32px !important;
+}
+
+/* Explore Page Container (L-Filters and Summary, R-Results) */
+.container2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 5%;
+  height: 100%;
+  flex-direction: row;
+}
+
+/* Filters and Summary */
+.left2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  width: auto;
+  height: 100%;
+  padding: 3%;
+  font-size: large;
+  text-align: center;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: 0.3s;
+  height: 100% !important;
+  margin: 3%;
+}
+
+/* Results */
+.right2 {
+  flex: 6;
+  height: auto;
+  padding: 3%;
+  font-size: large;
+  background-color: rgb(255, 255, 255);
+}
+
+.card {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: 0.3s;
+  height: 90% !important;
+  margin: 3%;
+  padding: 0%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* To ensure info stays on the RHS of the card */
+.right3 {
+  padding-right: 5%;
+  padding: 2%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+/* Proceed / Go Back buttons */
+.proceed-button {
+  background-color: #003060;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  margin-top: 15%;
+  padding: 5%;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.proceed-button:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+}

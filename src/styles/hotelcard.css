@@ -1,0 +1,68 @@
+/* Hotel Cards on theHome Page */
+
+.hotelcard-container {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll !important;
+  justify-content: space-evenly;
+  padding-left: 3%;
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+
+.hotelcard-container::-webkit-scrollbar {
+  width: 18px;
+  border-radius: 20px;
+}
+
+.hotelcard-container::-webkit-scrollbar-track {
+  background: #003060;
+  border-radius: 20px;
+}
+
+.hotelcard-container::-webkit-scrollbar-thumb {
+  width: 24px;
+  background: #003060;
+  border: 5px solid white;
+  border-radius: 15px;
+}
+
+.hotelcard-items {
+  margin: 2%;
+}
+
+.hotelcard {
+  margin: 0%;
+  padding: 0%;
+  flex: 1;
+  width: 20rem;
+  height: 25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.hotelcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.hotelcard-name,
+.hotelcard-location,
+.hotelcard-price {
+  color: black;
+  text-align: left;
+}
+
+.hotelcard-image {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.hotelcard-box {
+  width: 100%;
+  font-size: small;
+  text-align: left !important;
+  padding: 5%;
+  font-weight: normal;
+}
