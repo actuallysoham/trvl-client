@@ -33,7 +33,7 @@ class Hotel extends Component {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/gethotelbyid/" + url.split("/")[2] + "/" + url.split("/")[3] + "/" + url.split("/")[4] ,
+      url: "https://trvl-server.herokuapp.com/gethotelbyid/" + url.split("/")[2] + "/" + url.split("/")[3] + "/" + url.split("/")[4] ,
     }).then((res) => {  
       if (res.data){
         this.setState({hotels: res.data });
@@ -49,7 +49,7 @@ class Hotel extends Component {
     Axios({
       method: "POST",
       withCredentials: true,
-      url: "http://localhost:5000/addtobucketlist/" + hotel_id,
+      url: "https://trvl-server.herokuapp.com/addtobucketlist/" + hotel_id,
     }).then((res) => {  
       if (res.data){
         console.log(res.data);
@@ -73,7 +73,7 @@ class Hotel extends Component {
         hotelId: url.split("/")[2],
       },
       withCredentials: true,
-      url: "http://localhost:5000/addreview",
+      url: "https://trvl-server.herokuapp.com/addreview",
     }).then(function (res) {
       console.log(res);
       window.location.reload(false);
@@ -92,7 +92,7 @@ class Hotel extends Component {
         datefrom: url.split("/")[3],
         dateto: url.split("/")[4]
       },
-      url: "http://localhost:5000/bookhotel",
+      url: "https://trvl-server.herokuapp.com/bookhotel",
     }).then((res) => {  
       if (res.data){
         console.log(res.data);

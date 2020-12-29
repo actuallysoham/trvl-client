@@ -29,7 +29,7 @@ class Profile extends Component {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/getuser",
+      url: "https://trvl-server.herokuapp.com/getuser",
     }).then((res) => {
       if (res.data === "Please login first"){
         alert(res.data)
@@ -49,7 +49,7 @@ class Profile extends Component {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/getbucketlist",
+      url: "https://trvl-server.herokuapp.com/getbucketlist",
     }).then((res) => {
         this.setState({ bucketlistedhotels: res.data });
     });
@@ -60,7 +60,7 @@ class Profile extends Component {
       Axios({
         method: "GET",
         withCredentials: true,
-        url: "http://localhost:5000/logout",
+        url: "https://trvl-server.herokuapp.com/logout",
       }).then((res) => {
         alert("You are logged out!");
         //console.log(res.data);
@@ -75,7 +75,7 @@ class Profile extends Component {
           mobile: this.state.newmobile,
         },
         withCredentials: true,
-        url: "http://localhost:5000/update/number",
+        url: "https://trvl-server.herokuapp.com/update/number",
       }).then((res) => console.log(res));
       window.location.reload(false);
     };
@@ -87,7 +87,7 @@ class Profile extends Component {
           address: this.state.newaddress,
         },
         withCredentials: true,
-        url: "http://localhost:5000/update/address",
+        url: "https://trvl-server.herokuapp.com/update/address",
       }).then((res) => console.log(res));
       window.location.reload(false);
     };

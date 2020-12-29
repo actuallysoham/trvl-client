@@ -22,7 +22,7 @@ export default function Login() {
         password: loginPassword,
       },
       withCredentials: true,
-      url: "http://localhost:5000/login",
+      url: "https://trvl-server.herokuapp.com/login",
     }).then(function (res) {
       console.log(res);
       alert(res.data);
@@ -31,7 +31,7 @@ export default function Login() {
   };
 
   const googleAuth = () => {
-    window.open("http://localhost:5000/google");
+    window.open("https://trvl-server.herokuapp.com/google");
   };
 
   

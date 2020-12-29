@@ -25,7 +25,7 @@ class Home extends Component {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/viewedhotels",
+      url: "https://trvl-server.herokuapp.com/viewedhotels",
     }).then((res) => {
         this.setState({ hotels: res.data});
         console.log(res.data)
@@ -33,7 +33,7 @@ class Home extends Component {
       Axios({
         method: "GET",
         withCredentials: true,
-        url: "http://localhost:5000/getfeaturedhotels",
+        url: "https://trvl-server.herokuapp.com/getfeaturedhotels",
       }).then((res) => {
           this.setState({ featured: res.data});
           console.log(res.data)
@@ -41,7 +41,7 @@ class Home extends Component {
       Axios({
         method: "GET",
         withCredentials: true,
-        url: "http://localhost:5000/recco",
+        url: "https://trvl-server.herokuapp.com/recco",
       }).then((res) => {
           this.setState({ recco: res.data});
           console.log(res.data)
@@ -49,7 +49,7 @@ class Home extends Component {
         Axios({
           method: "GET",
           withCredentials: true,
-          url: "http://localhost:5000/userstatus",
+          url: "https://trvl-server.herokuapp.com/userstatus",
         }).then((res) => {
             this.setState({ userstatus: res.data});
             console.log(res.data)

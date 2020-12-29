@@ -47,7 +47,7 @@ class Explore extends Component {
     Axios({
       method: "POST",
       withCredentials: true,
-      url: "http://localhost:5000/hotelsearch",
+      url: "https://trvl-server.herokuapp.com/hotelsearch",
       data:{
         searchloc: this.state.destination,
         datefrom: this.state.datefrom,
@@ -61,7 +61,7 @@ class Explore extends Component {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/userstatus",
+      url: "https://trvl-server.herokuapp.com/userstatus",
 
     }).then((res) => {
       this.setState({ userstatus: res.data });
@@ -119,7 +119,7 @@ class Explore extends Component {
                 Axios({
                     method: "POST",
                     withCredentials: true,
-                    url: "http://localhost:5000/date",
+                    url: "https://trvl-server.herokuapp.com/date",
                     data:{
                       arrival: this.state.dateto,
                       locationDeparture: this.state.source,
@@ -187,7 +187,7 @@ class Explore extends Component {
       Axios({
         method: "POST",
         withCredentials: true,
-        url: "http://localhost:5000/hotelsearch",
+        url: "https://trvl-server.herokuapp.com/hotelsearch",
         data:{
           searchloc: this.state.destination,
           datefrom: this.state.datefrom,
@@ -212,14 +212,14 @@ handleBook = () => {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/userstatus",
+      url: "https://trvl-server.herokuapp.com/userstatus",
   }).then((res) =>{
       if(!res.data) alert("Please login to proceed")
       if(res.data){
         Axios({
           method: "POST",
           withCredentials: true,
-          url: "http://localhost:5000/book",
+          url: "https://trvl-server.herokuapp.com/book",
           data:{
               source: this.state.source,
               destination: this.state.destination,

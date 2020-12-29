@@ -23,7 +23,7 @@ export default function Register() {
         email: registerEmail,
       },
       withCredentials: true,
-      url: "http://localhost:5000/register",
+      url: "https://trvl-server.herokuapp.com/register",
     }).then(function (res) {
       console.log(res);
       alert(res.data);

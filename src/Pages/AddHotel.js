@@ -31,7 +31,7 @@ export default function AddProduct() {
 
       },
       withCredentials: true,
-      url: "http://localhost:5000/addhotel",
+      url: "https://trvl-server.herokuapp.com/addhotel",
     }).then((res) => console.log(res));
   };
 
