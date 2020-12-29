@@ -18,7 +18,7 @@ export default class FooterComp extends Component {
               </Nav.Link>
             </li>
             <li>
-              <Nav.Link href="https://github.com/hulikalruthu/approject2">
+              <Nav.Link href="https://github.com/actuallysoham/trvl">
                 Made with ❤️ by Tanvi, Soham and Ruthu
               </Nav.Link>
             </li>

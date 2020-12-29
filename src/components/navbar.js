@@ -15,7 +15,7 @@ export default class NavbarComp extends Component {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:5000/userstatus",
+      url: "https://trvl-server.herokuapp.com/userstatus",
     }).then((res) => {  
       if (res.data){
         this.setState({
